@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMATS - Admission</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admission.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-content">
+            <img src="img/logo.png" alt="College Logo">
+            <div class="headername">
+                <h1>SIMATS DEEMED UNIVERSITY</h1>
+            </div>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="admission.html">Admission</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    
+    <article>
+        <h2>Admission Application</h2>
+        <div class="admission-form">
+            <form id="admissionForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="program">Desired Program:</label>
+                    <select id="program" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="dental"><a href="dental.html">SAVEETHA DENTAL COLLEGE</a></option>
+                        <option value="engineering"><a href="engineering.html">SIMATS ENGINEERING</a></option>
+                        <option value="medical"><a href="medical.html">SAVEETHA MEDICAL COLLEGE</a></option>
+                        <option value="law"><a href="law.html">SAVEETHA SCHOOL OF LAW</a></option>
+                        <option value="pharmacy"><a href="pharmacy.html">SAVEETHA COLLEGE OF PHARMACY</a></option>
+                        <option value="management"><a href="management.html">SAVEETHA SCHOOL OF MANAGEMENT</a></option>
+                        <option value="physio"><a href="physio.html">SAVEETHA COLLEGE OF PHYSIOTHERAPY</a></option>
+                        <option value="nursing"><a href="nursing.html">SAVEETHA COLLEGE OF NURSING</a></option>
+                        <option value="physical_education"><a href="physical_education.html">SAVEETHA SCHOOL OF PHYSICAL EDUCATION</a></option>
+                        <option value="architecture"><a href="architecture.html">SAVEETHA COLLEGE OF ARCHITECTURE AND DESIGN</a></option>
+                        <option value="engineering_college"><a href="engineering_college.html">SAVEETHA ENGINEERING COLLEGE</a></option>
+                        <option value="liberal_arts"><a href="liberal_arts.html">SAVEETHA COLLEGE OF LIBERAL ARTS & SCIENCE</a></option>
+                        <option value="allied_health"><a href="allied_health.html">SAVEETHA COLLEGE OF ALLIED HEALTH SCIENCES</a></option>
+                        <option value="occupational_therapy"><a href="occupational_therapy.html">SAVEETHA COLLEGE OF OCCUPATIONAL THERAPY</a></option>
+                        <option value="eco_school"><a href="eco_school.html">SAVEETHA PUPIL ECO SCHOOL</a></option>
+                        <option value="hospitality"><a href="hospitality.html">SAVEETHA SCHOOL OF HOSPITALITY AND TOURISM</a></option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </article>
+    
+    <footer>
+        &copy; 2024 SIMATS. All rights reserved.
+    </footer>
+</div>
+
+<script>
+function toggleMenu() {
+    var nav = document.getElementById('nav');
+    if (nav.className === 'active') {
+        nav.className = '';
+    } else {
+        nav.className = 'active';
+    }
+}
+
+document.getElementById('admissionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Application submitted successfully!');
+    // Here you would typically send the form data to a server
+});
+</script>
+
+</body>
+</html>

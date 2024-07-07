@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveetha College of Occupational Therapy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-content">
+            <img src="img/logo.png" alt="College Logo">
+            <div class="headername">
+                <h1>SIMATS DEEMED UNIVERSITY</h1>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="admission.html">Admission</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <article>
+        <h2>Saveetha College of Occupational Therapy</h2>
+        <div class="program-details">
+            <img src="img/occupational_therapy.jpg" alt="Saveetha College of Occupational Therapy" style="width: 100%;">
+            <p>
+                Saveetha College of Occupational Therapy offers specialized undergraduate and postgraduate programs in Occupational Therapy. Located in Chennai, Tamil Nadu, the college focuses on holistic healthcare approaches and practical skills development.
+            </p>
+            <p>
+                Students at Saveetha College of Occupational Therapy benefit from hands-on training, clinical experience, and academic rigor. The college prepares graduates to provide effective therapeutic interventions and promote health and wellness in diverse populations.
+            </p>
+        </div>
+    </article>
+
+    <footer>
+        &copy; 2024 SIMATS. All rights reserved.
+    </footer>
+</div>
+
+<script>
+function toggleMenu() {
+    var nav = document.getElementById('nav');
+    if (nav.className === 'active') {
+        nav.className = '';
+    } else {
+        nav.className = 'active';
+    }
+}
+</script>
+
+</body>
+</html>

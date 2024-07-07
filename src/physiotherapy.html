@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveetha College of Physiotherapy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-content">
+            <img src="img/logo.png" alt="College Logo">
+            <div class="headername">
+                <h1>SIMATS DEEMED UNIVERSITY</h1>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="admission.html">Admission</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <article>
+        <h2>Saveetha College of Physiotherapy</h2>
+        <div class="program-details">
+            <img src="img/physiotherapy.jpg" alt="Saveetha College of Physiotherapy" style="width: 100%;">
+            <p>
+                Saveetha College of Physiotherapy is dedicated to providing high-quality education and training in physiotherapy. Located in Chennai, Tamil Nadu, the college offers both undergraduate and postgraduate programs.
+            </p>
+            <p>
+                The faculty at Saveetha College of Physiotherapy consists of experienced professionals who focus on practical learning and research, preparing students for successful careers in healthcare and rehabilitation.
+            </p>
+        </div>
+    </article>
+
+    <footer>
+        &copy; 2024 SIMATS. All rights reserved.
+    </footer>
+</div>
+
+<script>
+function toggleMenu() {
+    var nav = document.getElementById('nav');
+    if (nav.className === 'active') {
+        nav.className = '';
+    } else {
+        nav.className = 'active';
+    }
+}
+</script>
+
+</body>
+</html>
